@@ -1,0 +1,27 @@
+package guia2ej4;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Controller {
+	private List<Atleta> atletas = new ArrayList<>();
+	private List<Nadador> nadadores = new ArrayList<>();
+
+	public static void main (String[]args) {
+		Nadador delfin1 = new Delfin("blanco",'B');
+		Nadador triatleta1 = new Triatleta("Juan",'A');
+		Atleta atleta1 = new Triatleta("Alberto",'C');
+		Atleta atleta2 = new Atleta("Marcelo",'A');
+		agregar(delfin1);
+		
+	}
+	
+	public void agregar(Atleta atleta) {
+		atletas.add(atleta);
+	}
+	
+	public static void agregar(Nadador nadador) {
+		nadadores.add(nadador);
+	}
+
+}

@@ -1,0 +1,5 @@
+package guia2ej2;
+
+public class Cliente extends Persona {
+
+}

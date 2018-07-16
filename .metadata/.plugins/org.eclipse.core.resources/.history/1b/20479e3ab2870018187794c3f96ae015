@@ -1,0 +1,32 @@
+package guia2ej2;
+
+public class Cliente extends Persona {
+	
+	private String nroTlf;
+	private float deuda;
+	
+	public Cliente(String nombre, String fechaNac, String tipo, String nroTlf, float deuda) {
+		super(nombre, fechaNac, tipo);
+		this.setDeuda(deuda);
+		this.setFechaNac(fechaNac);
+		this.setNroTlf(nroTlf);
+	
+	}
+
+	public String getNroTlf() {
+		return nroTlf;
+	}
+
+	public void setNroTlf(String nroTlf) {
+		this.nroTlf = nroTlf;
+	}
+
+	public float getDeuda() {
+		return deuda;
+	}
+
+	public void setDeuda(float deuda) {
+		this.deuda = deuda;
+	}
+
+}

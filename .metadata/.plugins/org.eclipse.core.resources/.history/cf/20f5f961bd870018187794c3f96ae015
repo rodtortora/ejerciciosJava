@@ -1,0 +1,9 @@
+package pruebas;
+
+public class PersonaPesimista extends Persona {
+
+	public PersonaPesimista() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

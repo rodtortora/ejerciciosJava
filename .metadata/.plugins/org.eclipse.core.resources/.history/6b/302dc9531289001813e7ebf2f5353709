@@ -1,0 +1,22 @@
+package guia2ej2;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class Empresa {
+	private Collection<Persona> personas = new ArrayList<>();
+	
+	public static void main(String[] args) {
+		Empresa nexus = new Empresa();
+		Empleado empleado1 = new Empleado("Rodrigo","19960914",22000,"EMPLEADO");
+		Empleado directivo1 = new Directivo("Valeria","19880101",35000,"DESARROLLO","DIRECTIVO");
+		((Directivo) directivo1).agregarEmpleadoACargo(empleado1);
+		nexus.addPersona(directivo1);
+
+	}
+	
+	public void addPersona(Persona persona) {
+		personas.add(persona);		
+	}
+
+}

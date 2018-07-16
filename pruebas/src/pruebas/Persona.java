@@ -1,0 +1,9 @@
+package pruebas;
+
+public class Persona {
+
+	public String hablar() {
+		return "Mucho gustooo";
+	}
+
+}

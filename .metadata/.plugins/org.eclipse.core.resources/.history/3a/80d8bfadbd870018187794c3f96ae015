@@ -1,0 +1,23 @@
+package pruebas;
+
+public class Controlador {
+	private Persona personajes[] = new Persona[3];
+	
+	public Controlador() {
+		personajes[0] = new Persona();
+		personajes[1] = new PersonaAgresiva();
+		personajes[2] = new PersonaPesimista();
+		
+	}
+	
+	public void queTodosHablen() {
+		for (int i = 0; i<personajes.lenght; i++)
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

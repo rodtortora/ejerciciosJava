@@ -1,0 +1,31 @@
+package guia2ej2;
+
+public class Empleado extends Persona {
+	private float sueldo;
+	private String tipoEmpleado;
+	
+	public Empleado(String nombre, String fechaNac, String tipoEmpleado float sueldo) {
+		super(nombre, fechaNac);
+		this.setTipoEmpleado(tipoEmpleado);
+		this.setSueldo(sueldo);
+		
+	}
+	
+	public String getTipoEmpleado() {
+		return tipoEmpleado;
+	}
+
+	public float getSueldo() {
+		return sueldo;
+	}
+
+	public void setSueldo(float sueldo) {
+		this.sueldo = sueldo;
+	}
+	
+	@Override
+	public String toString() {
+		return super.toString() + this.getTipoEmpleado() + "Sueldo: " + this.getSueldo();
+	}
+
+}

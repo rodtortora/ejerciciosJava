@@ -1,0 +1,26 @@
+package guia2ej2;
+
+public class Directivo extends Empleado {
+	private String areaCargo;
+	
+	public Directivo(String nombre, String fechaNac, float sueldo, String areaCargo) {
+		super(nombre, fechaNac, sueldo);
+		this.setAreaCargo(areaCargo);
+	}
+
+	public String getAreaCargo() {
+		return areaCargo;
+	}
+
+	public void setAreaCargo(String areaCargo) {
+		this.areaCargo = areaCargo;
+	}
+	
+	public void agregarEmpleadoACargo()
+	
+	@Override
+	public String toString() {
+		return "Directivo. Nombre: " + this.getNombre() + "Empleados a cargo: " + getEmpleadosACargo();
+	}
+
+}

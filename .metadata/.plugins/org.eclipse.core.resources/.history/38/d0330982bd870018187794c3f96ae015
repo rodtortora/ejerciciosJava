@@ -1,0 +1,15 @@
+package pruebas;
+
+public class Controlador {
+	private Persona personajes[] = new Persona[5];
+	
+	public Juego() {
+		personajes[0] = new Persona();
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,6 @@
+package guia2ej2;
+
+public class Persona {
+	private String nombre, fechaNac;	
+
+}

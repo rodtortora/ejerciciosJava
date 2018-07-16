@@ -1,0 +1,21 @@
+package guia2ej4;
+
+public class TriatletaPosta extends Atleta implements Nadador, Ciclista {
+
+	public TriatletaPosta() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void pedalear() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void nadar() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

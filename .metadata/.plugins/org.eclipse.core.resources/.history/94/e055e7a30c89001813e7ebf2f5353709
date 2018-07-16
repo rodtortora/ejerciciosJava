@@ -1,0 +1,29 @@
+package pruebas;
+
+public class Controlador {
+	private Persona personajes[] = new Persona[3];
+	
+	public Controlador() {
+		personajes[0] = new Persona();
+		personajes[1] = new PersonaAgresiva();
+		personajes[2] = new PersonaPesimista();
+		
+	}
+	
+	public void queTodosHablen() {
+		for (int i = 0; i<personajes.length; i++) {
+			System.out.println(personajes[i].hablar());
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		//Controlador controlador = new Controlador();
+		//controlador.queTodosHablen();
+		Persona personaxd = new PersonaAgresiva();
+		System.out.println(personaxd.hablar());
+		System.out.println(personaxd.pelear());
+
+	}
+
+}

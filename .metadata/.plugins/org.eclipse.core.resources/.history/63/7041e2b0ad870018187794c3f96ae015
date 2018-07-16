@@ -1,0 +1,27 @@
+package guia2ej2;
+
+public class Persona {
+	private String nombre, fechaNac;
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getFechaNac() {
+		return fechaNac;
+	}
+
+	public void setFechaNac(String fechaNac) {
+		this.fechaNac = fechaNac;
+	}
+	
+	public Persona(String nombre, String fechaNac) {
+		this.setNombre(nombre);
+		this.setFechaNac(fechaNac);
+	}
+
+}

@@ -1,0 +1,9 @@
+package pruebas;
+
+public class PersonaAgresiva {
+
+	public PersonaAgresiva() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

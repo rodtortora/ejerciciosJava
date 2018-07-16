@@ -1,0 +1,9 @@
+package pruebas;
+
+public class PersonaAgresiva extends Persona {
+
+	public String hablar() {
+		return "puto del ortoooo!!! XD ahreagresivo";
+	}
+
+}

@@ -1,0 +1,10 @@
+package guia2ej2;
+
+public class Empleado extends Persona {
+	private float sueldo;
+	
+	public Empleado(float sueldo) {
+		
+	}
+
+}

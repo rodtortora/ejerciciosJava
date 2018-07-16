@@ -1,0 +1,13 @@
+package guia2ej2;
+
+public class Cliente extends Persona {
+	
+	private String nroTlf,
+	private float deuda;
+	
+	public Cliente() {
+		super(nombre, fechaNac, tipo);
+	
+	}
+
+}
