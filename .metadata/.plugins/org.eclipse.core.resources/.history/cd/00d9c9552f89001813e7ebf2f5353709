@@ -1,0 +1,16 @@
+package guia2ej5;
+
+import java.util.Observable;
+
+public class Pantalla extends Observable {
+	private String titulo;
+	
+	public Pantalla() {
+		addObserver(AdministradorUI administrador);
+	}
+	
+	public void mostrar() {
+		
+	}
+
+}

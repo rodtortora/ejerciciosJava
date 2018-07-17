@@ -1,0 +1,11 @@
+package guia2ej5;
+
+/**
+ * Interfaz que deberá implementar todo aquel objeto del que queramos controlar su estado
+ */
+
+public interface IObservable {
+	
+	
+
+}

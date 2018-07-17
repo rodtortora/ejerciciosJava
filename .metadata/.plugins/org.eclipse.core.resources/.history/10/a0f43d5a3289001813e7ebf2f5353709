@@ -1,0 +1,56 @@
+package guia2ej5;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Observable;
+import java.util.Observer;
+
+public class AdministradorUI implements Observer {
+	private Map<Pantalla> = new HashMap();
+	private List<Pantalla> pantallas = new ArrayList<>();
+	private Pantalla pantallaDefault, pantallaActual;
+
+	public AdministradorUI(Pantalla pantalla) {
+		setPantallaDefault(pantalla);
+		setPantallaActual(pantalla);
+	}
+	
+
+
+	public Pantalla getPantallaDefault() {
+		return pantallaDefault;
+	}
+
+	public void setPantallaDefault(Pantalla pantallaDefault) {
+		this.pantallaDefault = pantallaDefault;
+	}
+	
+	public Pantalla getPantallaActual() {
+		return pantallaActual;
+	}
+
+	public void setPantallaActual(Pantalla pantalla) {
+		this.pantallaActual = pantalla;
+	}
+	
+	public void addPantalla(Pantalla pantalla) {
+		pantallas.add(pantalla);
+	}
+	
+
+
+	@Override
+	public void update(Observable arg0, Object arg1) {
+		setPantallaActual((Pantalla) arg1);
+		System.out.println("Pantalla actual: " + ((Pantalla) arg1).getTitulo());
+	}
+
+	public static void main (String[]args) {
+		Pantalla pantallaBienvenida = new PantallaBienvenida("Welcome");
+		AdministradorUI a = new AdministradorUI(pantallaBienvenida); 
+		pantallaBienvenida.addObserver(a);
+		pantallaBienvenida.mostrar();
+	}
+
+
+}

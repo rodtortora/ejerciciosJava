@@ -1,0 +1,10 @@
+package guia2ej5;
+
+/**
+ * Interfaz que deberán implementar todos aquellos objetos que deban responder a
+ * los cambios de estado de los objetos observados.
+ */
+
+public interface IObserver {
+
+}

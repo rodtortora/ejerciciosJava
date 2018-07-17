@@ -1,0 +1,7 @@
+package guia2ej5;
+
+public interface IObserver {
+	
+	void update(Pantalla pantalla);
+
+}

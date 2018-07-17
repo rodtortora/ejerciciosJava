@@ -1,0 +1,30 @@
+package guia2ej5;
+
+import java.util.Observable;
+
+public class Pantalla extends Observable {
+	private String titulo;
+	
+	public Pantalla(String titulo) {
+		setTitulo(titulo);
+	}
+
+	public String getTitulo() {
+		return titulo;
+	}
+
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+	
+	public void mostrar() {
+		setChanged();
+		notifyObservers(this);
+	}
+	
+	@Override
+	public String toString() {
+		return this.getTitulo();
+	}
+
+}
